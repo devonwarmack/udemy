@@ -16,6 +16,12 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <!-- resize iframe | http://stackoverflow.com/a/9976309/3100494 --> 
+  <script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+  </script>
 </head>
 
 <body>
@@ -38,7 +44,8 @@
         <article>
           <!-- Projects here -->
           <h1>Project 1: HTML</h1>
-          <iframe src="project-1-html"></iframe>
+          <iframe src="project-1-html" style="width:100%"
+            onload='javascript:resizeIframe(this);' frameborder="0" scrolling="no"></iframe>
         </article>
       </div>
     </div>
