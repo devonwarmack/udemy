@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Devo's Javascript</title>
+    <meta charset="utf-8"></meta>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+
+
+
+
+</head>
+
+<body>
+    <input id="myInput" type="text" value="new text here"/>
+
+    <button id="stylesChanger">Click to change text below</button>
+
+    <div id="firstDiv">I'll change for you.</div>
+
+
+
+    <script type="text/javascript">
+
+        var newText=document.getElementById("myInput").value;
+
+        document.getElementById("stylesChanger").onclick=function() {
+
+            newText=document.getElementById("myInput").value;
+
+            document.getElementById("firstDiv").innerHTML=newText;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
