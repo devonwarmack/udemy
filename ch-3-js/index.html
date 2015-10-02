@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Devo's Javascript</title>
+    <meta charset="utf-8"></meta>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+
+
+
+</head>
+
+<body>
+
+   <button id="textChanger">alchemy</button>
+
+   <button id="textAppender">magic</button>
+
+   <button id="textCreator">sorcery</button>
+
+   <div id="firstDiv">water</div>
+
+   <div id="secondDiv">Devon is...</div>
+
+   <div id="emptyDiv"></div>
+
+    <script type="text/javascript">
+
+        document.getElementById("textChanger").onclick=function() {
+
+            document.getElementById("firstDiv").innerHTML="wine";
+        }
+
+        document.getElementById("textAppender").onclick=function() {
+
+            document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML + "a magician!";
+        }
+
+        document.getElementById("textCreator").onclick=function() {
+
+            document.getElementById("emptyDiv").innerHTML="<h3>BOO!!!</h3><ul><li>change</li><li>add</li><li>create!</li></ul>";
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
