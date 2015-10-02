@@ -1,0 +1,138 @@
+body {
+    margin:0;
+    background-color:whitesmoke;
+    font-family:arial,helvetica,arial,sans-serif;
+}
+
+#topbar {
+    background-color:black;
+    width:100%;
+    height:40px;
+    color:white;
+}
+
+.fixedwidth {
+    width:1050px;
+    margin:0 auto;
+
+}
+
+#logodiv {
+    float:left;
+    padding-top:6px;
+    padding-right:15px;
+    border-right: 1px solid slategrey;
+
+}
+#signindiv {
+    font-weight:bold ;
+    font-size: 0.85em;
+    padding: 11px 70px 0 3px;
+    float:left;
+    border-right: 1px solid slategrey;
+
+
+}
+
+#signindiv img {
+    position:relative;
+    padding: 0 0 0 10px;
+
+}
+
+#topmenudiv {
+    float:left;
+}
+
+#topmenudiv ul {
+    margin:0;
+    padding:0;
+}
+#topmenudiv li {
+    list-style:none;
+    font-weight:bold;
+    border-right:1px solid slategrey;
+    height:100%;
+    float:left;
+    font-size:.8em;
+    padding: 10px 15px 15px 15px;
+}
+
+#searchdiv {
+    float: left;
+    padding: 8px 0 12px 8px;
+}
+
+#searchdiv input {
+    height:10px;
+    width:180px;
+    padding:5px 0 5px 5px;
+    font-weight:bold;
+    font-size:.9em;
+    background-position: right center;
+    background-repeat:no-repeat;
+    background-image:url("images/searchlogo.PNG");
+}
+
+.break {
+    clear:both;
+}
+
+#datetime {
+    float:right;
+    margin:27px 37px 0 0;
+
+}
+#datetime p {
+    margin:0;
+    padding:0;
+    color:dimgrey;
+    font-size:1.5em;
+    font-weight:bold;
+    font-family: Arial,Helvetica,freesans,sans-serif;
+}
+
+.break{
+    clear:both;
+}
+
+#content {
+    margin:0;
+    padding:0;
+    width:100%;
+    color:white;
+
+}
+
+.russiaimage {
+    margin:10px 0 0 -110px;
+    float:left;
+
+}
+
+#topicsquare {
+    width:400px;
+    float:left;
+}
+
+#oregonpic {
+    margin:-3px 0 0 -23px;
+}
+
+#trumppic{
+    margin:0 0 -18px -23px;
+
+}
+
+#bondpic {
+    float:right;
+    margin:-97px 15px; 0 0;
+}
+
+#englandpic {
+    margin: 5px 0 0 -23px;
+}
+#rugbypic {
+    float:right;
+    margin:-117px 18px 0 0;
+}
