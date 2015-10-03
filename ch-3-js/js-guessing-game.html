@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Devo's Javascript-Arrays</title>
+        <meta charset="utf-8"></meta>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-type"></meta>
+        <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+    </head>
+
+    <body>
+
+        <p>guess a # 1-7</p>
+        <input id="answer" />
+        <button id="answerButton">submit</button>
+
+
+        <script type="text/javascript">
+
+            document.getElementById("answerButton").onclick=function() {
+
+
+                var x=Math.random();
+
+                x=8*x;
+
+                x=Math.floor(x);
+
+                if (x==document.getElementById("answer").value) {
+                    alert("correct");
+                }
+                else{
+                    alert("wrong! the # was " +x);
+                }
+            }
+
+        </script>
+
+
+    </body>
+
+</html>
