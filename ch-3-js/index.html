@@ -9,7 +9,22 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-type"></meta>
     <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
 
+    <style type="text/css">
+        #redCircle {
+            height:150px;
+            width:150px;
+            border-radius:75px;
+            background-color:red;
+        }
 
+        #redCircle p {
+            margin:0;
+            padding: 60px 0 0 30px;
+            font-weight:bolder;
+            font-style:oblique;
+            color:whitesmoke;
+        }
+    </style>
 
 </head>
 
@@ -21,11 +36,16 @@
 
    <button id="textCreator">sorcery</button>
 
+
    <div id="firstDiv">water</div>
 
    <div id="secondDiv">Devon is...</div>
 
    <div id="emptyDiv"></div>
+
+   <div id="redCircle">
+       <p>Don't Pop Me!</p>
+   </div>
 
     <script type="text/javascript">
 
@@ -43,6 +63,13 @@
 
             document.getElementById("emptyDiv").innerHTML="<h3>BOO!!!</h3><ul><li>change</li><li>add</li><li>create!</li></ul>";
         }
+
+        document.getElementById("redCircle").onclick=function() {
+
+            document.getElementById("redCircle").style.display="none";
+        }
+
+
 
 
     </script>
