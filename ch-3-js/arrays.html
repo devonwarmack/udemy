@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Devo's Javascript-Arrays</title>
+    <meta charset="utf-8"></meta>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type"></meta>
+    <meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+</head>
+
+<body>
+
+    <button id="arrayButton">Array Button (pos[0])</button>
+
+    <div id="firstDiv">
+        Baby don't change me!<br />
+        Don't change me...<br />
+        No MOOORE...<br />
+        </div>
+
+    <script type="text/javascript">
+
+        var myArray=new Array();
+
+        myArray[0]="soccer";
+        myArray[1]="programming";
+
+        console.log(myArray);
+
+        anotherArray=["Sparkle","Sam","Auri","Riley"];
+
+        anotherArray.push("Bella");
+
+        anotherArray.splice(1,2);
+
+        anotherArray.splice(2,0, "Auri-Riley Puppies", "Perfect GSD");
+
+        console.log(anotherArray.length);
+
+        console.log(anotherArray);
+
+        document.getElementById("arrayButton").onclick=function() {
+            document.getElementById("firstDiv").innerHTML=myArray[0];
+        }
+
+
+
+</script>
+
+
+</body>
+
+</html>
