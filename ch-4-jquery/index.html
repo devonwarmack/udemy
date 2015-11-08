@@ -31,28 +31,24 @@
 
 
 <body>
+    <div id="circle"></div>
 
-    <p>Some text.</p>
 
-    <button id="fader">Fade Out</button>
-
-    <button id="faderIn">Fade In</button>
 
     <script>
-        $("#fader").click(function() {
+        $("#circle").click(function() {
+            $(this).animate({
+                width:"300px",
+                height:"300px",
+                borderRadius:"150px",
+                marginLeft:"200px",
+                marginTop:"150px"
+            },2000);
 
-            $("p").fadeOut(2000, function() {
-                alert("fadeout complete");
-
-            });
-
-        });
-
-        $("#faderIn").click(function() {
-
-            $("p").fadeIn(4000);
 
         });
+
+
 
 
     </script>
