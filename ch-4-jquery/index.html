@@ -32,14 +32,25 @@
 
 <body>
 
-    <div id="circle"></div>
-    <div class="square"></div>
-    <div class="square"></div>
+    <p>Some text.</p>
+
+    <button id="fader">Fade Out</button>
+
+    <button id="faderIn">Fade In</button>
 
     <script>
-        $("#circle").click(function() {
+        $("#fader").click(function() {
 
-            $(".square").fadeOut();
+            $("p").fadeOut(2000, function() {
+                alert("fadeout complete");
+
+            });
+
+        });
+
+        $("#faderIn").click(function() {
+
+            $("p").fadeIn(4000);
 
         });
 
