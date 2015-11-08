@@ -31,23 +31,21 @@
 
 
 <body>
-    <div id="circle"></div>
+
+
+    <h1>Asyncronous Javascript and XML</h1>
 
 
 
     <script>
-        $("#circle").click(function() {
-            $(this).animate({
-                width:"300px",
-                height:"300px",
-                borderRadius:"150px",
-                marginLeft:"200px",
-                marginTop:"150px"
-            },2000);
 
 
+
+        $.ajax({
+            url:"test.html"
+        }).done(function(data){
+            $("h1").append(data);
         });
-
 
 
 
