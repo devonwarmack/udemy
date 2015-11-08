@@ -8,9 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-    <script type="text/javascript" src="jquery.min.js">
-
-    </script>
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
 
     <style>
         #circle {
@@ -35,12 +33,15 @@
 <body>
 
     <div id="circle"></div>
-    <div class="square"></div>
-    <div class="square"></div>
+    <p>Some text to be changed via jquery.</p>
+    <iframe src="http://www.google.com"></iframe>
 
     <script>
         $("#circle").click(function() {
-            alert("Circle Clicked!")
+
+            $("iframe").attr("src", "http://www.facebook.com");
+
+
 
         });
 
