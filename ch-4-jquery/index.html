@@ -33,20 +33,12 @@
 <body>
 
 
-    <h1>Asyncronous Javascript and XML</h1>
-
-
-
     <script>
+        var regex=/e/g;
+        var string="Regex is Great";
 
-
-
-        $.ajax({
-            url:"test.html"
-        }).done(function(data){
-            $("h1").append(data);
-        });
-
+        var result=string.match(regex);
+        alert(result);
 
 
     </script>
