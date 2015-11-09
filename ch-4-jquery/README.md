@@ -42,7 +42,7 @@ ___
     -  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/
         libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         
-    *Accordion: splits and compresses 
+    *Accordion: splits and compresses content of div
     
        $("#divId").accordion();
        $(".divClass").accordion();
