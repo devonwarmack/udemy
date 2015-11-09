@@ -46,6 +46,10 @@ ___
     
        $("#divId").accordion();
        $(".divClass").accordion();
+       
+    *Sortable Lists: drag and order lists/objects
+    
+        $("ul").sortable();
 
 
 
