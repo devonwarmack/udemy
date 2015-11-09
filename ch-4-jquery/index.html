@@ -10,7 +10,6 @@
 
     <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
 
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <style>
@@ -21,11 +20,11 @@
             width:100px;
             background-color:red;
         }
-    #resize {
-        height:100px;
-        width:100px;
-        background-color:blue;
-    }
+        #target {
+            height:400px;
+            width:400px;
+            background-color:blue;
+        }
 
 
     </style>
@@ -39,13 +38,17 @@
 <body>
 
     <div id="square">Drag me around</div>
-    <div id="resize">Resize me</div>
+    <div id="target"></div>
 
 
     <script>
 
         $("#square").draggable();
-        $("#resize").resizable();
+        $("#target").droppable({
+           drop: function(ui, event) {
+               $("#target").css("background-color", "grey");
+           }
+        });
     </script>
 
 
