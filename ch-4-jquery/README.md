@@ -12,3 +12,27 @@ ___
     <script type="text/javascript" src="file-name"></script>
     
     <script type="text/javascript" src="url"</script>
+    
+___
+
+## Lecture 128 Online hosted libraries
+
+*Google jQuery ui cdn
+*Google Hosted Libraries
+
+___
+
+## Lecture 131 Droppables
+
+*Drop function takes 2 arguments
+
+    $("#target").droppable({
+               drop: function(ui, event) {
+                   $("#target").css("background-color", "grey");
+               }
+            });
+
+
+
+
+
