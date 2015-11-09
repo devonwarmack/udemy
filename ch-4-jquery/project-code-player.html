@@ -28,15 +28,14 @@
         }
 
         #logo {
-            margin: -27px 0 0 5px;
+            padding: 10px 0 0 0;
             font-weight: bold;
-            font-size:110%;
-            display:inline;
+            font-size: 110%;
         }
 
         #buttonDiv {
             float:right;
-            margin: -33px 5px 0 0;
+            margin:-50px 10px 0 0;
         }
 
         #runButton {
@@ -48,22 +47,64 @@
             list-style:none;
             margin: 0 auto;
             border-radius:3px;
-            height:30px;
-
-
+            height:27px;
+            padding:0;
 
         }
 
         #toggles li {
-            float:right;
+            float:left;
             border:1px solid darkslategrey;
-
+            padding:5px 7px;
+            margin: -25px 0 0 0;
 
         }
 
+        .clear {
+            clear:both;
+        }
 
+        .codeContainer{
+            height:100%;
+            width:50%;
+            float:left;
+            position:relative;
+        }
 
+        .codeContainer textarea{
 
+        }
+
+        .codeContainer textarea{
+            width:100%;
+            height:100%;
+            border:none;
+            border-right:1px solid grey;
+            font-family:monotype;
+            font-size:90%;
+            padding:5px;
+        }
+
+        .codeLabel {
+            position:absolute;
+            right:10px;
+            top:10px;
+        }
+
+        #cssContainer, #jsContainer {
+            display:none;
+        }
+
+        iframe {
+            height: 100%;
+            position:relative;
+            left:20px;
+
+        }
+
+        .selected {
+           background-color:grey;
+        }
 
     </style>
 </head>
@@ -72,27 +113,66 @@
 
     <div id="menuBar">
 
+        <div id="logo">
+            Devon's jQuery Project
+        </div>
+
+        <ul id="toggles">
+            <li class="toggle selected">HTML</li>
+            <li class="toggle selected" style="border-left:none">CSS</li>
+            <li class="toggle selected" style="border-left:none">JS</li>
+            <li class="toggle selected" style="border-left:none">Result</li>
+        </ul>
+
+        <div id="buttonDiv">
+            <button id="runButton">Run</button>
+        </div>
+
     </div>
 
-    <div id="logo">
-        Devon's jQuery Project
+    <div class="clear"></div>
+
+    <div class="codeContainer" id="htmlContainer">
+
+        <div class="codeLabel">HTML</div>
+        <textarea>Example code</textarea>
+
     </div>
 
-    <ul id="toggles">
-        <li style="border-left:none">Result</li>
-        <li style="border-left:none">JS</li>
-        <li style="border-left:none">CSS</li>
-        <li>HTML</li>
+    <div class="codeContainer" id="cssContainer">
 
-    </ul>
+        <div class="codeLabel">CSS</div>
+        <textarea>Example code</textarea>
 
-    <div id="buttonDiv">
-        <button id="runButton">Run</button>
     </div>
 
+    <div class="codeContainer" id="jsContainer">
 
+        <div class="codeLabel">JS</div>
+        <textarea>Example code</textarea>
+
+    </div>
+
+    <div class="codeContainer" id="resultContainer">
+
+        <div class="codeLabel">JS</div>
+        <iframe></iframe>
+
+    </div>
 </div>
 
+    <script>
+        var windowHeight=$(window).height();
+        var menuBarHeight=$("#menuBar").height();
+        var codeContainerHeight=windowHeight-menuBarHeight;
+
+        $(".codeContainer").height(codeContainerHeight+"px");
+
+        $(".toggle").click(function(){
+
+            $(this).toggleClass("selected");
+        });
+    </script>
 
 </body>
 </html>
