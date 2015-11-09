@@ -10,21 +10,12 @@
 
     <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
 
-
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <style>
 
 
-        #square {
-            height:100px;
-            width:100px;
-            background-color:red;
-        }
-        #target {
-            height:400px;
-            width:400px;
-            background-color:blue;
-        }
+
 
 
     </style>
@@ -35,20 +26,43 @@
 
 
 
-<body>
+    <div id="accordion">
+    <h3>Title</h3>
+    <div>
+        <p>some text. some other text. some text. some other text. some text. some other text. some text. some other text.
+        some text. some other text. some text. some other text. some text. some other text.
+        some text. some other text. some text. some other text. some text. some other text.
+        </p>
+    </div>
 
-    <div id="square">Drag me around</div>
-    <div id="target"></div>
+    <h3>Title</h3>
+    <div>
+        <p>some text. some other text. some text. some other text. some text. some other text. some text. some other text.
+            some text. some other text. some text. some other text. some text. some other text.
+            some text. some other text. some text. some other text. some text. some other text.
+        </p>
+    </div>
 
+    <h3>Title</h3>
+    <div>
+        <p>some text. some other text. some text. some other text. some text. some other text. some text. some other text.
+            some text. some other text. some text. some other text. some text. some other text.
+            some text. some other text. some text. some other text. some text. some other text.
+        </p>
+    </div>
+
+    <h3>Title</h3>
+    <div>
+        <p>some text. some other text. some text. some other text. some text. some other text. some text. some other text.
+            some text. some other text. some text. some other text. some text. some other text.
+            some text. some other text. some text. some other text. some text. some other text.
+        </p>
+    </div>
+    </div>
 
     <script>
 
-        $("#square").draggable();
-        $("#target").droppable({
-           drop: function(ui, event) {
-               $("#target").css("background-color", "grey");
-           }
-        });
+        $("#accordion").accordion();
     </script>
 
 
