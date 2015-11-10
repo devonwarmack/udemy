@@ -1,6 +1,4 @@
 
-
-
 body {
     margin:0;
     padding:0;
@@ -58,15 +56,12 @@ body {
 }
 
 .codeContainer textarea{
-
-}
-
-.codeContainer textarea{
     width:100%;
     height:100%;
     border:none;
     border-right:1px solid grey;
     font-family:monotype;
+    box-sizing:border-box;
     font-size:90%;
     padding:5px;
 }
@@ -77,9 +72,7 @@ body {
     top:10px;
 }
 
-#cssContainer, #jsContainer {
-    display:none;
-}
+
 
 iframe {
     height: 100%;

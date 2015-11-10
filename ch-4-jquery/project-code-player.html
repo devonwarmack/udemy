@@ -38,31 +38,31 @@
 
     <div class="clear"></div>
 
-    <div class="codeContainer" id="htmlContainer">
+    <div class="codeContainer" id="HTMLContainer">
 
         <div class="codeLabel">HTML</div>
-        <textarea>Example code</textarea>
+        <textarea id="HTMLCode"></textarea>
 
     </div>
 
-    <div class="codeContainer" id="cssContainer">
+    <div class="codeContainer" id="CSSContainer">
 
         <div class="codeLabel">CSS</div>
-        <textarea>Example code</textarea>
+        <textarea id="CSSCode"> </textarea>
 
     </div>
 
-    <div class="codeContainer" id="jsContainer">
+    <div class="codeContainer" id="JSContainer">
 
         <div class="codeLabel">JS</div>
-        <textarea>Example code</textarea>
+        <textarea id="JSCode"></textarea>
 
     </div>
 
-    <div class="codeContainer" id="resultContainer">
+    <div class="codeContainer" id="ResultContainer">
 
-        <div class="codeLabel">JS</div>
-        <iframe></iframe>
+        <div class="codeLabel">Result</div>
+        <iframe id="resultFrame"></iframe>
 
     </div>
 </div>
@@ -77,6 +77,28 @@
         $(".toggle").click(function(){
 
             $(this).toggleClass("selected");
+
+            var activeDiv=$(this).html();
+
+            $("#"+activeDiv+"Container").toggle();
+
+            var showingDivs=$(".codeContainer").filter(function() {
+                return($(this).css("display")!="none");
+            }).length;
+
+            var width=100/showingDivs;
+
+            $(".codeContainer").css("width", width+"%");
+
+
+        });
+
+        $("#runButton").click(function(){
+
+            $("iframe").contents().find("html").html('<style>'+$("#CSSCode").val()+'</style>'+$("#HTMLCode").val());
+
+            document.getElementById("resultFrame").contentWindow.eval($("#JSCode").val());
+
         });
     </script>
 
