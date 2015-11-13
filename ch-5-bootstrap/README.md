@@ -21,4 +21,15 @@ ___
 
 ___
 
-Lecture 141
+##Lecture 142
+
+
+
+*12 columns can be broken down in various multiples
+
+*used to format objects on various screen sizes.
+
+___
+
+
+
