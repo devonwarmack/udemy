@@ -2,72 +2,72 @@
 
 ___
 
-##Lecture 139
+## Lecture 139
 
 *getbootstrap.com
 
 
 ___
 
-##Lecture 140
+## Lecture 140
 
-*can download 
+* can download 
 
-*can use bootstrap cdn
+* can use bootstrap cdn
 
-*place in same folder as files to use with
+* place in same folder as files to use with
 
-**start template is also available from getbootstrap.com
+ * start template is also available from getbootstrap.com
 
 ___
 
-##Lecture 142
+## Lecture 142
 
 
 
-*12 columns can be broken down in various multiples
+* 12 columns can be broken down in various multiples
 
-*used to format objects on various screen sizes.
+* used to format objects on various screen sizes.
 
 ___
 
 ##Lecture 144 NavBars
 
-*navbar
+* navbar
 
-**div with two classes
+ * div with two classes
 
 <div class="navbar navbar-default">
 
 ___
 
-##Lecture 146 Forms & Tables
+## Lecture 146 Forms & Tables
 
-###Forms:
+### Forms:
 
-**input types (even checks format of input):
+* input types (even checks format of input):
 
-***date, text, password, email, submit(button)
+ * date, text, password, email, submit(button)
 
 
-###Tables:
+### Tables:
 
-*To add bootstrap styling to table: add class to table tag 
+* To add bootstrap styling to table: add class to table tag 
  as well as style selector.
  
-*can add classes to specific <tr> or <td> tags.
+* can add classes to specific <tr> or <td> tags.
 
 ___
 
 Lecture 148: Bootstrap Components
 
-*can use glyphicons
+* can use glyphicons
 
-*can also style them with css
+* can also style them with css
 
 <span class="glyphicon glyphicon-search"></span>
 
-*alerts:
+* alerts:
 
 *use often for various reasons: success, warnings, etc.
 
@@ -75,22 +75,22 @@ Lecture 148: Bootstrap Components
    Good job!
 </div>
 
-*List Group:
+* List Group:
 
 ___
 
-##Lecture 148 Modals:
+## Lecture 148 Modals:
 
 *simple popup; blocks background content to bring 
  attention to something
  
 ___
 
-##Lecture 150 
+## Lecture 150 
 
-*Scrollspy
+* Scrollspy
 
-*allows for quick access and informartion as to where 
+* allows for quick access and informartion as to where 
  user is on webpage.
  
 ___
