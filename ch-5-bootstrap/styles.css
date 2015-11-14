@@ -6,3 +6,17 @@
 .large {
     font-size:300%;
 }
+
+#div1 {
+    background-color: red;
+}
+#div2 {
+    background-color:blue ;
+}
+#div3 {
+    background-color:green ;
+}
+
+.contentDiv{
+    height:800px;
+}

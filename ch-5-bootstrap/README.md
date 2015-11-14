@@ -88,6 +88,15 @@ ___
 
 ##Lecture 150 
 
+*Scrollspy
+
+*allows for quick access and informartion as to where 
+ user is on webpage.
+ 
+___
+
+
+
 
 
 
