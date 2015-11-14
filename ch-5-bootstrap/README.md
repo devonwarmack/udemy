@@ -57,6 +57,30 @@ ___
  
 *can add classes to specific <tr> or <td> tags.
 
+___
+
+Lecture 148: Bootstrap Components
+
+*can use glyphicons
+
+*can also style them with css
+
+<span class="glyphicon glyphicon-search"></span>
+
+*alerts:
+
+*use often for various reasons: success, warnings, etc.
+
+<div class="alert alert-success">
+   Good job!
+</div>
+
+*List Group:
+
+
+
+
+
 
 
 

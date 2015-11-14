@@ -2,3 +2,7 @@
     background-color:grey;
     border: 1px solid deepskyblue;
 }
+
+.large {
+    font-size:300%;
+}
