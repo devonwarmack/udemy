@@ -41,6 +41,15 @@ ___
 
 ___
 
+##Lecture 146 Forms & Tables
+
+###Forms:
+
+**input types (even checks format of input):
+
+***date, text, password, email, submit(button)
+
+
 
 
 
