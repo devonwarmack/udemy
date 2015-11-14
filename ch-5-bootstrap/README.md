@@ -4,7 +4,7 @@ ___
 
 ## Lecture 139
 
-*getbootstrap.com
+* getbootstrap.com
 
 
 ___
