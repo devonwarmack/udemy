@@ -41,29 +41,33 @@
         </div>
 
     </div>
-
+    <h1>My Bootstrap Page</h1>
+    <button class="btn btn-success" data-toggle="modal" data-target="myModal">
+        Launch Modal
+    </button>
     <div class="container">
-        <h1>My Bootstrap Page</h1>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">x</button>
 
-       <div class="container">
+                        <h4 class="modal-title">Devon's Modal</h4>
+                    </div>
+                    <div class="modal-body">
+                        Modal body
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-           <span class="glyphicon glyphicon-search large"></span>
 
-           <div class="input-group">
-               <span class="glyphicon glyphicon-comment input-group-addon"></span>
-           </div>
 
-           <div class="alert alert-success">
-               Good job!
-           </div>
-
-           <ul>
-               <li class="list-group-item">Item 1</li>
-               <li class="list-group-item">Item 2</li>
-               <li class="list-group-item">Item 3</li>
-               <li class="list-group-item">Item 4</li>
-           </ul>
-       </div>
+    </div>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

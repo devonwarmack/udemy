@@ -77,7 +77,16 @@ Lecture 148: Bootstrap Components
 
 *List Group:
 
+___
 
+##Lecture 148 Modals:
+
+*simple popup; blocks background content to bring 
+ attention to something
+ 
+___
+
+##Lecture 150 
 
 
 
