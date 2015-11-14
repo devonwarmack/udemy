@@ -1,0 +1,56 @@
+.navbar-brand {
+    font-size:1.7em;
+}
+
+#topContainer {
+    background-image:url("owl.jpg");
+    height:400px;
+    width:100%;
+    background-size: cover;
+    color: deepskyblue;
+    font-weight: bolder;
+}
+
+#topRow{
+    margin-top:100px;
+    text-align: center;
+}
+
+#topRow h1{
+    font-size:277%;
+}
+
+#emailSignup {
+    margin-top:50px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.marginTop{
+    margin-top:27px;
+}
+
+.center {
+    text-align:center;
+}
+
+.title {
+    margin-top:100px;
+    font-size:270%;
+}
+
+#footer {
+    background-color:deepskyblue;
+    padding-top:77px;
+    width:100%;
+}
+
+.marginBottom{
+    margin-bottom: 27px;
+}
+
+.appstoreImage {
+    width:250px;
+}
