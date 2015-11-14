@@ -67,15 +67,15 @@ Lecture 148: Bootstrap Components
 
 * can also style them with css
 
-<span class="glyphicon glyphicon-search"></span>
+ * <span class="glyphicon glyphicon-search"></span>
 
 * alerts:
 
-*use often for various reasons: success, warnings, etc.
+* use often for various reasons: success, warnings, etc.
 
-<div class="alert alert-success">
+ * '<div class="alert alert-success">
    Good job!
-</div>
+   </div>'
 
 * List Group:
 
@@ -83,7 +83,7 @@ ___
 
 ## Lecture 148 Modals:
 
-*simple popup; blocks background content to bring 
+* simple popup; blocks background content to bring 
  attention to something
  
 ___
@@ -92,7 +92,7 @@ ___
 
 * Scrollspy
 
-* allows for quick access and informartion as to where 
+* allows for quick access and information as to where 
  user is on webpage.
  
 ___
