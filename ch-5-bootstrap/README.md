@@ -50,7 +50,12 @@ ___
 ***date, text, password, email, submit(button)
 
 
+###Tables:
 
+*To add bootstrap styling to table: add class to table tag 
+ as well as style selector.
+ 
+*can add classes to specific <tr> or <td> tags.
 
 
 
