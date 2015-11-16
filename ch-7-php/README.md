@@ -122,6 +122,45 @@ ___
             echo "Key: $key Value: $value <br />";
         }`
         
+___
+        
+## Lecture 177: While loops
+
+* loops for arrays 
+
+ * `$i=0;
+    $array=array("devon ", "riley ", "auri");
+        while ($array[$i]) {
+        echo $array[$i];
+     $i++;
+    }`
+    
+ ___
+ 
+## Lecture 178: Sending emails with php
+
+* inside body of html file
+
+ * `<?php    
+            $emailTo="test@greenhost.org.uk";
+            $subject="this should work"
+            $body="body text";
+            $headers="From: devonwarmack@blabla.com";  
+            mail($emailto, $subject, $body, $headers);
+        ?>`
+        
+* to check if mail was SENT:
+
+ * `if (mail($emailto, $subject, $body, $headers)) {
+        echo "Mail was sent.";
+    }
+    else {
+        echo "mail was not sent.";
+    }`
+    
+    
+    
+        
 
  
  
