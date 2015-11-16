@@ -15,13 +15,23 @@
 
         <?php
 
-            if($_GET["submit"]) {
+        $names=array("devon", "riley", "auri");
+
+            if($_POST["submit"]) {
 
 
 
-                if($_GET["name"]) {
+                if($_POST["name"]) {
 
-                    echo "your name is ".$_GET['name'];
+                    foreach ($names as $name) {
+                        if ($_POST["name]==$name) {
+                            echo "I know you. your name is ".$name;
+                            $knowYou=1;
+                        }
+
+
+                    }
+                    if (!$knowYou) echo "i dont know you. ".$_POST['name'];
                 }
 
                 else {
@@ -30,7 +40,7 @@
             }
         ?>
 
-        <form>
+        <form method="post">
             <label for="name">Name</label>
             <input name="name" type="text" />
 
