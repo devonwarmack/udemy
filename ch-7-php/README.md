@@ -107,6 +107,21 @@ ___
             echo "number does not equal otherNumber AND that";
         }`
         
+## Lecture 175: for and Foreach:
+
+* for loops 
+
+ * `for ($i=1; $i<=10; $i++) {
+        echo $i."<br />";
+      }`
+      
+* for each
+
+ * ` $array=array("devon", "riley", "auri");
+     foreach ($array as $key => $value) {
+            echo "Key: $key Value: $value <br />";
+        }`
+        
 
  
  
