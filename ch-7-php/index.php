@@ -1,4 +1,5 @@
 <?php
+    ini_set('error_reporting', E_ALL);
 
     $number=1;
     $otherNumber=2;
@@ -10,16 +11,26 @@
     else {
         echo "number does not equal otherNumber";
     }
+    echo "<br /> <br />";
 
-
-    $this=3;
+    $thiss=3;
     $that=4;
 
-    if ($this!=$that) {
+    if ($thiss!=$that) {
         echo "this is not that";
     }
 
     else {
         echo "this is that";
+    }
+
+     echo "<br /> <br />";
+
+    if ($number==$otherNumber AND $number==$that) {
+        echo "number equals otherNumber AND that";
+    }
+
+    else {
+        echo "number does not equal otherNumber AND that";
     }
 ?>

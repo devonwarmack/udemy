@@ -75,6 +75,40 @@ ___
 
  * `unset($otherArray["germany"]);`
  
+ ___
+ 
+ 
+## Lecture 174: if statements
+
+* if $x equals $y 
+
+ * `if ($number==$otherNumber) {
+        echo "number equals otherNumber";
+        }
+    else {
+            echo "number does not equal otherNumber";
+        }`
+        
+* if $x does not equal $y
+
+ * `if ($thiss!=$that) {
+            echo "this is not that";
+        }
+    else {
+            echo "this is that";
+        }`
+        
+* if $x equals $y AND $z
+
+ * `if ($number==$otherNumber AND $number==$that) {
+            echo "number equals otherNumber AND that";
+        }
+    else {
+            echo "number does not equal otherNumber AND that";
+        }`
+        
+
+ 
  
 
  
