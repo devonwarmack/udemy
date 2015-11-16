@@ -158,10 +158,27 @@ ___
         echo "mail was not sent.";
     }`
     
+    ___
     
-    
-        
+## Lecture 180 GET variables:
 
+* $_GET 
+
+ * get array with all variables in URL of website
+    
+* use with a form 
+
+ * `<?php
+        if($_GET["submit"]) {            
+            if($_GET["name"]) {    
+                echo "your name is ".$_GET['name'];
+            }  
+            else {
+                echo "enter your name";
+            }
+        }
+    ?>`
+    
  
  
 

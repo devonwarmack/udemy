@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Learning php</title>
+    <title>Learning jquery</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -11,15 +11,34 @@
 
 
 <body>
+    <div>
 
-    <?php
-        $emailTo="test@greenhost.org.uk";
-        $subject="this should work"
-        $body="body text";
-        $headers="From: devonwarmack@blabla.com";
+        <?php
 
-        mail($emailto, $subject, $body, $headers);
-    ?>
+            if($_GET["submit"]) {
+
+
+
+                if($_GET["name"]) {
+
+                    echo "your name is ".$_GET['name'];
+                }
+
+                else {
+                    echo "enter your name";
+                }
+            }
+        ?>
+
+        <form>
+            <label for="name">Name</label>
+            <input name="name" type="text" />
+
+            <input type="submit" name="submit" value="submit your name" />
+        </form>
+
+
+    </div>
 
 </body>
 </html>
