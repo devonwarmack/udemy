@@ -1,34 +1,25 @@
 <?php
 
-  $myArray=array("dogs", "food", "stuff");
+    $number=1;
+    $otherNumber=2;
 
-  print_r($myArray);
+    if ($number==$otherNumber) {
+    echo "number equals otherNumber";
+    }
 
-  echo "<br />";
-
-  echo $myArray[0];
-
-  echo "<br />";
-
-  $otherArray=array(
-    "riley" => "dog",
-    "germany" => "country"
-  );
-
-  echo "<br />";
-
-  print_r($otherArray);
-
-  unset($otherArray["germany"]);
-
-  echo "<br />";
-
-  print_r($otherArray);
+    else {
+        echo "number does not equal otherNumber";
+    }
 
 
+    $this=3;
+    $that=4;
 
+    if ($this!=$that) {
+        echo "this is not that";
+    }
 
-
-
-
+    else {
+        echo "this is that";
+    }
 ?>
