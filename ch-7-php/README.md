@@ -33,7 +33,7 @@ ___
  
 * Concatenate: use "." instead of "+"
 
- *`echo $var1.$var2;`
+ * `echo $var1.$var2;`
  
 * Variable Variables 
 
@@ -42,5 +42,42 @@ ___
     echo $$var;`
     
  * echos devon
+ 
+ ___
+ 
+## Lecture 173: Arrays
+
+* to print array
+
+ * `$myArray=array("dogs", "food", "stuff");
+      print_r($myArray);`
+
+* echo particular object in array
+
+ * `$myArray=array("dogs", "food", "stuff");
+      print_r($myArray);
+      echo $myArray[0];`
+      
+* line breaks needed to separate lines
+
+ * `echo "<br />";`
+  
+* another array setup, named index
+ 
+ * `$otherArray=array(
+       "riley" => "dog",
+       "germany => "country"
+     );`
+  
+ * value "dog" is at index "riley"
+ 
+* remove value from array
+
+ * `unset($otherArray["germany"]);`
+ 
+ 
+
+ 
+ 
  
 

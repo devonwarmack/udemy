@@ -1,12 +1,33 @@
 <?php
-    $var="My name is ";
-    $name="Devon";
 
-    echo $var.$name;
+  $myArray=array("dogs", "food", "stuff");
 
-    $var1="name";
+  print_r($myArray);
 
-    echo $$var1;
+  echo "<br />";
+
+  echo $myArray[0];
+
+  echo "<br />";
+
+  $otherArray=array(
+    "riley" => "dog",
+    "germany" => "country"
+  );
+
+  echo "<br />";
+
+  print_r($otherArray);
+
+  unset($otherArray["germany"]);
+
+  echo "<br />";
+
+  print_r($otherArray);
+
+
+
+
 
 
 
